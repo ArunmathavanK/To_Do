@@ -1,0 +1,5 @@
+.env
+Dockerfile
+venv/
+.DS_Store
+# (macos type of file)

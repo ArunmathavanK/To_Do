@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: django-todo
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn to_do.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: "False"
